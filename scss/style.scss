@@ -1,0 +1,91 @@
+$primary-color: #444;
+$secondary-color: #8a2be2;
+$show-image: url(/images/rishi--fiCYNV51m4-unsplash.jpg);
+$show-home-image: true;
+$opacity: 0.9;
+
+@mixin background {
+    @if $show-home-image {
+        &#bg-img {
+            background: $show-image;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -2;
+            background: rgba($color: $primary-color, $alpha: $opacity);
+        }
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include background();
+    background-color: $primary-color;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 400;
+
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: .2rem 1rem;
+        background-color: rgba(lighten($color: $primary-color, $amount: 2), .5);
+    }
+}
+
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+main {
+    height: 100%;
+    padding: 4rem;
+
+    .icons {
+        margin-top: 1rem;
+
+        a {
+            padding: 0.4rem;
+        }
+    }
+
+    &#home {
+        overflow: hidden;
+
+        h1 {
+            margin-top: 20vh;
+        }
+    }
+}
