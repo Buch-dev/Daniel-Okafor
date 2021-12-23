@@ -1,29 +1,5 @@
-$primary-color: #444;
-$secondary-color: #8a2be2;
-$show-image: url(/images/rishi--fiCYNV51m4-unsplash.jpg);
-$show-home-image: true;
-$opacity: 0.9;
-
-@mixin background {
-    @if $show-home-image {
-        &#bg-img {
-            background: $show-image;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            z-index: -2;
-            background: rgba($color: $primary-color, $alpha: $opacity);
-        }
-    }
-}
+@import 'config';
+@import 'menu';
 
 
 * {
@@ -47,6 +23,7 @@ header {
     position: fixed;
     z-index: 2;
     top: 0;
+    width: 100%;
 }
 
 h1, h2, h3 {
