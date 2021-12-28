@@ -149,6 +149,30 @@ main {
     }
 }
 
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    div {
+        font-size: 1.5rem;
+        padding: 20px;
+        border: 3px solid #fff;
+        margin: 1rem;
+
+        &:hover {
+            padding: 1.5rem 2.5rem;
+            background: $secondary-color;
+
+            @include easeOut;
+
+            span {
+                color: #fff;
+            }
+        }
+    }
+}
+
 #main-footer {
     background: darken($color: $primary-color, $amount: 10);
     color: set-text-color($primary-color);
