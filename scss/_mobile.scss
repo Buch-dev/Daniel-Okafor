@@ -87,7 +87,49 @@
 // Smartphones 
 @include mediaSm {
     main#home {
-        margin-top: 10vh;
+        margin-top: 1vh;
+
+        .lg-heading {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 5rem;
+        }
+
+    }
+
+    .sm-heading {
+        // border: 2px solid red;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons {
+        // border:  1px solid red;
+        text-align: center;
+    }
+
+    main#about {
+        .lg-heading {
+            font-size: 5rem;
+        }
+
+        .about-info {
+            border: 1px solid red;
+
+            img {
+                width: 230px;
+                margin-inline: auto;
+            }
+        }
+    }
+
+    main#contact {
+        .lg-heading {
+            // border: 1px solid red;
+            font-size: 4.5rem;
+            margin-inline: auto;
+        }
     }
 
     .projects {

@@ -200,6 +200,11 @@ main .icons a {
   padding: 0.4rem;
 }
 
+main .icons a:hover {
+  color: #8a2be2;
+  transition: all 0.5s ease-out;
+}
+
 main#home {
   overflow: hidden;
 }
@@ -375,7 +380,34 @@ main#home h1 {
 
 @media screen and (max-width: 500px) {
   main#home {
-    margin-top: 10vh;
+    margin-top: 1vh;
+  }
+  main#home .lg-heading {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 5rem;
+  }
+  .sm-heading {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons {
+    text-align: center;
+  }
+  main#about .lg-heading {
+    font-size: 5rem;
+  }
+  main#about .about-info {
+    border: 1px solid red;
+  }
+  main#about .about-info img {
+    width: 230px;
+    margin-inline: auto;
+  }
+  main#contact .lg-heading {
+    font-size: 4.5rem;
+    margin-inline: auto;
   }
   .projects {
     grid-template-columns: 1fr;
