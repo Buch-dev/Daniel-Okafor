@@ -87,7 +87,7 @@
   height: 300px;
   border: 5px solid #8a2be2;
   border-radius: 50%;
-  background: url(/images/Daniel-Okafor.jpg);
+  background: url(images/Daniel-Okafor.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -140,7 +140,7 @@ body {
 }
 
 body#bg-img {
-  background: url(/images/rishi--fiCYNV51m4-unsplash.jpg);
+  background: url(images/rishi--fiCYNV51m4-unsplash.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
