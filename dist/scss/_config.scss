@@ -1,6 +1,6 @@
 $primary-color: #444;
 $secondary-color: #8a2be2;
-$show-image: url(./img/rishi--fiCYNV51m4-unsplash.jpg);
+$show-image: url(../img/rishi--fiCYNV51m4-unsplash.jpg);
 $show-home-image: true;
 $opacity: 0.9;
 
@@ -24,7 +24,7 @@ $opacity: 0.9;
             height: 100%;
             width: 100%;
             z-index: -2;
-            background: rgba($color: $primary-color, $alpha: $opacity);
+            // background: rgba($color: $primary-color, $alpha: $opacity);
         }
     }
 }
