@@ -92,7 +92,9 @@
         .lg-heading {
             text-align: center;
             margin-top: 2rem;
-            font-size: 5rem;
+            margin-bottom: 2rem;
+            font-size: 4rem;
+            line-height: 1.3;
         }
 
     }
@@ -115,7 +117,7 @@
         }
 
         .about-info {
-            border: 1px solid red;
+            // border: 1px solid red;
 
             img {
                 width: 230px;
@@ -124,10 +126,21 @@
         }
     }
 
+    main#work {
+        .lg-heading {
+            // border: 1px solid red;
+            font-size: 4rem;
+            line-height: 1.4;
+            margin-inline: auto;
+            margin-bottom: 2rem;
+        }
+    }
+
     main#contact {
         .lg-heading {
             // border: 1px solid red;
-            font-size: 4.5rem;
+            font-size: 4rem;
+            line-height: 1.4;
             margin-inline: auto;
         }
     }
